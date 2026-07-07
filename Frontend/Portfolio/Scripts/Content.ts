@@ -1,5 +1,7 @@
 // Util
 
+const PFotosBase = "/Assets/PFotos";
+
 const DomainName = () => { return window.location.hostname; }
 
 const GetLinkedInName = () => {
@@ -31,7 +33,7 @@ export const FeaturedImages: FeaturedImage[] = [
 
     {
 
-        ImageURL: "https://cdn.sprout.software/Files/Sprout/Hosting/PFotos/Med/015.webp",
+        ImageURL: `${PFotosBase}/Med/015.webp`,
 
         Title: "Blue Blossoms",
 
@@ -46,7 +48,7 @@ export const FeaturedImages: FeaturedImage[] = [
 
     {
 
-        ImageURL: "https://cdn.sprout.software/Files/Sprout/Hosting/PFotos/Med/024.webp",
+        ImageURL: `${PFotosBase}/Med/024.webp`,
 
         Title: "Foreground Flowers",
 
@@ -61,7 +63,7 @@ export const FeaturedImages: FeaturedImage[] = [
 
     {
 
-        ImageURL: "https://cdn.sprout.software/Files/Sprout/Hosting/PFotos/Med/025.webp",
+        ImageURL: `${PFotosBase}/Med/025.webp`,
 
         Title: "Sunlight Branches",
 
@@ -422,11 +424,11 @@ export const MasonryPhotos: MasonryPhoto[] = MasonryPhotosEnums.map(Photo => ({
 
     URLs: {
 
-        SmallScaled: `https://cdn.sprout.software/Files/Sprout/Hosting/PFotos/Small/${Photo.Enum}_scaled.webp`,
+        SmallScaled: `${PFotosBase}/Small/${Photo.Enum}_scaled.webp`,
 
-        Small: `https://cdn.sprout.software/Files/Sprout/Hosting/PFotos/Small/${Photo.Enum}.webp`,
-        Medium: `https://cdn.sprout.software/Files/Sprout/Hosting/PFotos/Med/${Photo.Enum}.webp`,
-        Large: `https://cdn.sprout.software/Files/Sprout/Hosting/PFotos/Large/${Photo.Enum}.webp`
+        Small: `${PFotosBase}/Small/${Photo.Enum}.webp`,
+        Medium: `${PFotosBase}/Med/${Photo.Enum}.webp`,
+        Large: `${PFotosBase}/Large/${Photo.Enum}.webp`
 
     },
 
